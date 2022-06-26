@@ -11,6 +11,13 @@ a{
     margin-left: 20vw;
 }
 
+@media screen and (max-width: 749px) {
+    #MainContent{
+        width: 100vw;
+        margin-left: 0;
+    }
+}
+
 /* <<<<ヘッダー>>>>>> */
 
 header{
@@ -37,6 +44,7 @@ header{
 
 .homepage-blog{
     margin: 2%;
+    padding-bottom: 2%;
     background: #F5F7F8;
     border-radius: 1rem;
 }
@@ -54,5 +62,5 @@ header{
 }
 
 .homepage-blog__text{
-    
+    border-bottom: medium solid #D8D8D8;
 }
