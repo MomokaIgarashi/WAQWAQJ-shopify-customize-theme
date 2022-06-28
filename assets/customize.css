@@ -124,6 +124,7 @@ header{
 @media screen and (max-width: 749px) {
 
     .text-with-2images__inner{
+        width: 90%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -133,5 +134,46 @@ header{
     .text-with-2images__image{
         width: 90%;
         padding: 2% 0;
+    }
+}
+
+
+/* *公式SNSブロック* */
+
+.text-with-social-icons__wrapper{
+    width: 100%;
+    padding: 3% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size:large;
+    font-weight: 600;
+    font-family: 'A P-OTF Shuei KakuGo Gin Std';
+}
+
+.text-with-social-icons__inner{
+    width: 20%;
+    display: flex;
+    justify-content:space-around;
+    padding: 5% 0;
+}
+
+.text-with-social-icons__image{
+    width: 80%;
+    height: auto;
+}
+
+@media screen and (max-width: 749px) {
+
+    .text-with-social-icons__inner{
+        width: 80%;
+        display: flex;
+        justify-content:space-around;
+        padding: 5% 0;
+    }
+    
+    .text-with-social-icons__image{
+        width: 100%;
+        height: auto;
     }
 }
