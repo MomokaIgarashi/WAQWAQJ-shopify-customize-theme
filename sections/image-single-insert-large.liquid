@@ -1,0 +1,30 @@
+<div class="image-single-insert__wrapper">
+    <picture>
+        <source  class="image-single-insert-large__image" media="(min-width: 768px)" srcset="{{ section.settings.image_pc | img_url: 'original' }}">
+        <img  class="image-single-insert-large__image" src="{{ section.settings.image_sp | img_url: 'original'}}"/>
+    </picture>    
+</div>
+
+{% schema %}
+{
+    "name": "レスポンシブ画像１枚(大)",
+    "settings": [
+        {
+        "type": "image_picker",
+        "id": "image_pc",
+        "label": "画像(PC)"
+        },
+        {
+        "type": "image_picker",
+        "id": "image_sp",
+        "label": "画像(Mobile)"
+        }
+    ],
+    "presets" : [
+        {
+            "name" : "レスポンシブ画像１枚(大)挿入",
+            "category" : "Image"
+        }
+    ]
+}
+{% endschema %}

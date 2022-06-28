@@ -64,3 +64,34 @@ header{
 .homepage-blog__text{
     border-bottom: medium solid #D8D8D8;
 }
+
+/* *画像挿入Single responsive* */
+
+.image-single-insert__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-single-insert-large__image{
+    width: 60vw;
+    height: auto;
+}
+
+.image-single-insert-medium__image{
+    width: 30vw;
+    height: auto;
+}
+
+
+@media screen and (max-width: 749px) {
+    .image-single-insert-large__image{
+        width: 90vw;
+        height: auto;
+    }
+
+    .image-single-insert-medium__image{
+        width: 90vw;
+        height: auto;
+    }
+}
