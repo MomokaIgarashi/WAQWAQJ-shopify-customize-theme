@@ -1,0 +1,47 @@
+<div class="text-with-2images__wrapper">
+    {{ section.settings.title_text }}
+    <div class="text-with-2images__inner">
+        {% for block in section.blocks %}
+            <a href="{{ block.settings.my_url_name }}">
+                <img class="text-with-2images__image" src="{{block.settings.single_image_picker | img_url: "original"}}">
+            </a>
+        {% endfor %}
+    </div>
+</div>
+
+{% schema %}
+{
+    "name": "テキスト＋画像２枚",
+    "settings": [
+        {
+            "type": "text",
+            "id": "title_text",
+            "label": "テキスト",
+            "default": "テキスト編集してください"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "2images-block",
+            "name": "画像ブロック",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "single_image_picker",
+                    "label": "画像２"
+                },
+                {
+                    "type": "url",
+                    "id": "my_url_name",
+                    "label": "URL"
+                }
+            ]
+        }
+    ],
+    "presets" : [
+        {
+            "name" : "テキスト＋画像２枚"
+        }
+    ]
+}
+{% endschema %}
