@@ -1,0 +1,47 @@
+<div class="text-with-social-icons__wrapper">
+    {{ section.settings.title_text }}
+    <div class="text-with-social-icons__inner">
+        {% for block in section.blocks %}
+            <a href="{{ block.settings.my_url_name }}">
+                <img class="text-with-social-icons__image" src="{{block.settings.single_image_picker | img_url: "original"}}">
+            </a>
+        {% endfor %}
+    </div>
+</div>
+
+{% schema %}
+{
+    "name": "SNSアイコンブロック",
+    "settings": [
+        {
+            "type": "text",
+            "id": "title_text",
+            "label": "テキスト",
+            "default": "公式SNS"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "icon-block",
+            "name": "画像ブロック",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "single_image_picker",
+                    "label": "SNSアイコン"
+                },
+                {
+                    "type": "url",
+                    "id": "my_url_name",
+                    "label": "URL"
+                }
+            ]
+        }
+    ],
+    "presets" : [
+        {
+            "name" : "SNSアイコンブロック"
+        }
+    ]
+}
+{% endschema %}

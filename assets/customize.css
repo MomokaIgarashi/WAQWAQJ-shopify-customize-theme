@@ -64,3 +64,116 @@ header{
 .homepage-blog__text{
     border-bottom: medium solid #D8D8D8;
 }
+
+/* *画像挿入Single responsive* */
+
+.image-single-insert__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-single-insert-large__image{
+    width: 60vw;
+    height: auto;
+}
+
+.image-single-insert-medium__image{
+    width: 30vw;
+    height: auto;
+}
+
+
+@media screen and (max-width: 749px) {
+    .image-single-insert-large__image{
+        width: 90vw;
+        height: auto;
+    }
+
+    .image-single-insert-medium__image{
+        width: 90vw;
+        height: auto;
+    }
+}
+
+/* *テキスト＋画像２枚* */
+
+.text-with-2images__wrapper{
+    width: 100%;
+    padding: 3% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size:large;
+    font-weight: 600;
+    font-family: 'A P-OTF Shuei KakuGo Gin Std';
+}
+
+.text-with-2images__inner{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    padding: 5% 0;
+}
+
+.text-with-2images__image{
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 749px) {
+
+    .text-with-2images__inner{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5% 0;
+    }
+    
+    .text-with-2images__image{
+        width: 90%;
+        padding: 2% 0;
+    }
+}
+
+
+/* *公式SNSブロック* */
+
+.text-with-social-icons__wrapper{
+    width: 100%;
+    padding: 3% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size:large;
+    font-weight: 600;
+    font-family: 'A P-OTF Shuei KakuGo Gin Std';
+}
+
+.text-with-social-icons__inner{
+    width: 20%;
+    display: flex;
+    justify-content:space-around;
+    padding: 5% 0;
+}
+
+.text-with-social-icons__image{
+    width: 80%;
+    height: auto;
+}
+
+@media screen and (max-width: 749px) {
+
+    .text-with-social-icons__inner{
+        width: 80%;
+        display: flex;
+        justify-content:space-around;
+        padding: 5% 0;
+    }
+    
+    .text-with-social-icons__image{
+        width: 100%;
+        height: auto;
+    }
+}
