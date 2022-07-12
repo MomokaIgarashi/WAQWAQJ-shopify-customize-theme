@@ -14,6 +14,25 @@
   margin-bottom: 1.5rem;
 }
 
+.contact-wrapper{
+  background-image: url(https://cdn.shopify.com/s/files/1/0584/0286/5288/files/contact-background-pc.png?v=1657448254);
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  padding-top: 3vw;
+}
+
+.contact-background{
+  /* background-image: url({{ 'contact-background-pc.png' | asset_url }}); */
+}
+
+@media screen and (max-width: 749px) {
+  .contact-wrapper{
+    background-image: url(https://cdn.shopify.com/s/files/1/0584/0286/5288/files/contact-background-sp.png?v=1657450504);
+    padding-top: 10rem;
+  }
+}
+
 @media screen and (min-width: 750px) {
   .contact .field {
     margin-bottom: 2rem;

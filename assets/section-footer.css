@@ -4,7 +4,7 @@
 
 .footer:not(.color-background-1) {
   border-top: none;
-  margin-left: 20vw;
+  margin-left: 20%;
 }
 
 .footer__content-top {
@@ -13,7 +13,7 @@
 }
 
 .footer-wrapper{
-  margin-left: 15%;
+  margin-left: 10%;
 }
 
 img.footer__Image{
