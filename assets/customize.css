@@ -38,6 +38,129 @@ header{
     }
 }
 
+
+/* <<<<<<<商品個別ページ>>>>>>>> */
+
+.product-main-image__wrapper{
+    width: 80vw;
+    padding-bottom: 0;
+}
+
+.product-main-image{
+    width: 100%!important;
+    height: auto;
+}
+
+/* **Product Points***** */
+
+.product-points__wrapper{
+    background-image: url(https://cdn.shopify.com/s/files/1/0584/0286/5288/files/product-points-background-pc.png?v=1658168092);
+    width: 100%;
+    height: 580px;
+    object-fit: contain;
+    padding-top: 5vw;
+}
+
+@media screen and (max-width: 749px) {
+    .product-main-image{
+        width: 100vw!important;
+        height: auto;
+    }
+
+    .product-points__wrapper{
+        background-image: url(https://cdn.shopify.com/s/files/1/0584/0286/5288/files/product-points-background-sp.png?v=1658168537);
+    }
+}
+
+/* ***Product Schedule***** */
+
+.product-schedule__wrapper{
+    background-color: #F5F7F8;
+}
+
+.product-schedule__inner{
+    width: 80%;
+    margin-left: 20%;
+    padding: 5% 0;
+}
+
+.product-schedule-map__block{
+    display: flex;
+}
+
+.product-schedule-map__time{
+    margin-right: 3%;
+}
+
+.product-schedule-circle{
+    width: 1rem;
+    height: 1rem;
+    margin-right: -5px;
+    z-index: 2;
+    margin-top: 1%;
+}
+
+.product-schedule-map__border{
+    border-left: 1px solid #87BAC6;
+    z-index: 1;
+    margin-top: 1%;
+}
+
+.product-schedule-map__content{
+    margin-left: 5%;
+}
+
+.product-schedule-map__title{
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 749px) {
+
+    .product-schedule__inner{
+        width: 100%;
+        margin-left: 3%;
+    }
+}
+
+/* **Product Attention**** */
+
+.product-attention__wrapper{
+    width: 70%;
+    margin-left:15%;
+    margin-right:15%;
+}
+
+@media screen and (max-width: 749px) {
+
+    .product-attention__wrapper{
+        width: 100%;
+        margin-left:5%;
+        margin-right:5%;
+    }
+}
+
+/* ***Product Other Recommendations****** */
+
+.product-other-reco__wrapper{
+    background-color: #F5F7F8;
+    padding: 5% 0;
+    display: flex;
+    justify-content: center;
+}
+
+.product-other-reco__inner{
+}
+
+@media screen and (max-width: 749px) {
+
+    .product-attention__wrapper{
+        width: 100%;
+        margin-left:5%;
+        margin-right:5%;
+    }
+}
+
+
 /* ***セクション******* */
 
 /* *トップページ　ブログセクション */
