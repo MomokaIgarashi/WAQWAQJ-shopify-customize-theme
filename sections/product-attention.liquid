@@ -1,9 +1,11 @@
 <div class="product-attention__wrapper">
     <h3>注意事項</h3>
     <ul>
-        <li>半ズボン､ミニスカート､ランニング､タンクトップなど肌の露出度の多い服装では入場できません。</li>
-        <li>ヴァチカン美術館内に大きな荷物やスーツケース、金属類はお持ち込みいただけません。あらかじめご注意ください。</li>
-        <li>美術館内では帽子をお取りください。</li>
-        <li>ヴァチカン美術館ではビデオカメラの持ち込みおよびフラッシュ撮影は固く禁じられております。また、システィーナ礼拝堂での写真撮影およびビデオ撮影、携帯電話の使用は禁止されております。</li>
+        {{ product.metafields.custom.product-attention-notes }}
     </ul>
+    <div class="product-attention__inner">
+        <p class="product-attention__text">{{ product.metafields.custom.product-attention-text.value }}</p>
+        <img class="product-attention__icon" src="https://cdn.shopify.com/s/files/1/0584/0286/5288/files/waqwaq-icon-text2.png?v=1658252285" alt="">
+    </div>
 </div>
+
