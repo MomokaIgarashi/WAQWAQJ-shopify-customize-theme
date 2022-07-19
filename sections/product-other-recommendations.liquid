@@ -1,7 +1,14 @@
 <div class="product-other-reco__wrapper">
+    <p class="product-other-reco__title">その他のツアー</p>
     <div class="product-other-reco__inner">
-        <p>その他のツアー</p>
-        <img class="product-other-reco__image" src="https://cdn.shopify.com/s/files/1/0584/0286/5288/files/product-other-reco1.png?v=1658173530" alt="">
-        <img class="product-other-reco__image" src="https://cdn.shopify.com/s/files/1/0584/0286/5288/files/product-other-reco1.png?v=1658173530" alt="">
+        <a href="{{ product.metafields.custom.other-product1.value }}">
+            <img class="product-other-reco__image" src="{{ product.metafields.custom.other-product1.value | img_url:"master"}}" alt="">
+        </a>
+        <a href="{{ product.metafields.custom.other-product2.value }}">
+            <img class="product-other-reco__image" src="{{ product.metafields.custom.other-product2.value | img_url:"master"}}" alt="">
+        </a>
     </div>
+    <p class="product-other-reco__text">{{ product.metafields.custom.other-recommendations-text.value }}</p>
+    <img class="product-other-reco__icon" src="https://cdn.shopify.com/s/files/1/0584/0286/5288/files/waqwaq-icon-text3.png?v=1658252268" alt="">
 </div>
+
