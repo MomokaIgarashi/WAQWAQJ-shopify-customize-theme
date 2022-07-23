@@ -41,6 +41,16 @@ header{
 
 /* <<<<<<<商品個別ページ>>>>>>>> */
 
+#shopify-section-template--14954993844360__main{
+    margin: 0!important;
+    padding: 0!important;
+}
+
+.shopify-section .section{
+    margin: 0!important;
+    padding: 0!important;
+}
+
 .product-main-image__wrapper{
     width: 80vw;
     padding-bottom: 0;
