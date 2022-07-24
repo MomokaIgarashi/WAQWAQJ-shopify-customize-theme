@@ -1,0 +1,42 @@
+<div class="product-points__wrapper">
+    <div class="product-points__inner">
+        <div class="product-points-left">
+            <div class="product-points-left-title">
+                <img class="product-points-left-title__icon" src="{{ 'location-icon.svg' | asset_url }}" alt="">
+                <p class="product-points-left-title__text">{{ product.metafields.custom.points-left-title.value }}</p>
+            </div>
+            <div class="product-points-left-text">
+                <img class="product-points-left-text__image" src="{{ 'product-points-left.png' | asset_url }}" alt="">
+                <p class="product-points-left-text__list">{{ product.metafields.custom.points-left-text1.value }}</p>
+            </div>
+            <div class="product-points-left-text">
+                <img class="product-points-left-text__image" src="{{ 'product-points-left.png' | asset_url }}" alt="">
+                <p class="product-points-left-text__list">{{ product.metafields.custom.points-left-text2.value }}</p>
+            </div>
+            <div class="product-points-left-text">
+                <img class="product-points-left-text__image" src="{{ 'product-points-left.png' | asset_url }}" alt="">
+                <p class="product-points-left-text__list">{{ product.metafields.custom.points-left-text3.value }}</p>
+            </div>
+        </div>
+        <img class="product-points-center__image" src="{{ product.metafields.custom.points-center-image.value | img_url:'original'}}" alt="">
+        <div class="product-points-right">
+            <div class="product-points-right-title">
+                <img class="product-points-right-title__icon" src="{{ 'waqwaq-mini-icon-1.svg' | asset_url }}" alt="">
+                <p class="product-points-right-title__text">{{ product.metafields.custom.points-right-title.value }}</p>
+            </div>
+            <div class="product-points-left-text">
+                <img class="product-points-right-text__image" src="{{ 'product-points-right.png' | asset_url }}" alt="">
+                <p class="product-points-right-text__list">{{ product.metafields.custom.points-right-text1.value }}</p>
+            </div>
+            <div class="product-points-left-text">
+                <img class="product-points-right-text__image" src="{{ 'product-points-right.png' | asset_url }}" alt="">
+                <p class="product-points-right-text__list">{{ product.metafields.custom.points-right-text2.value }}</p>
+            </div>
+            <div class="product-points-left-text">
+                <img class="product-points-right-text__image" src="{{ 'product-points-right.png' | asset_url }}" alt="">
+                <p class="product-points-right-text__list">{{ product.metafields.custom.points-right-text3.value }}</p>
+            </div>
+        </div>
+    </div>
+    <p class="product-points-center-mini__text">{{ product.metafields.custom.points-mini-text.value }}</p>
+</div>

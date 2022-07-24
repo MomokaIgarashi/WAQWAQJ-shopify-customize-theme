@@ -38,6 +38,453 @@ header{
     }
 }
 
+
+/* <<<<<<<商品個別ページ>>>>>>>> */
+
+#shopify-section-template--14954993844360__main{
+    margin: 0!important;
+    padding: 0!important;
+}
+
+.shopify-section .section{
+    margin: 0!important;
+    padding: 0!important;
+}
+
+.product-main-image__wrapper{
+    width: 80vw;
+    padding-bottom: 0;
+}
+
+.product-main-image{
+    width: 100%!important;
+    height: auto;
+}
+
+/* **Product Points***** */
+
+.product-points__wrapper{
+    background-image: url(https://cdn.shopify.com/s/files/1/0584/0286/5288/files/product-points-background-pc.png?v=1658168092);
+    width: 100%;
+    height: 580px;
+    /* padding-top: 52%; */
+    object-fit: contain;
+    position: relative;
+}
+
+.product-points__inner{
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.product-points-left{
+    width: 25vw;
+}
+
+.product-points-left-title{
+    display: flex;
+    margin-left: 15%;
+}
+
+.product-points-left-title__icon{
+    width: 1.5vw;
+    height: auto;
+    margin-right: 2%;
+}
+
+.product-points-left-title__text{
+    color: #EB6C3F;
+    font-size: 2rem;
+    font-family: 'RocknRoll One';
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 1%;
+}
+
+.product-points-left-text__image{
+    position: relative;
+    width: 25vw;
+    height: auto;
+    z-index: 1;
+}
+
+.product-points-left-text__list{
+    position: absolute;
+    margin-left: 6%;
+    z-index: 2;
+    font-family: 'A P-OTF Shuei KakuGo Gin Std';
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin-top: -4.5%;
+}
+
+.product-points-center__image{
+    width: 12vw;
+    height: 12vw;
+    margin: 5% 2% 0 2%;
+}
+
+.product-points-right{
+    width: 25vw;
+    margin-top: 7%;
+}
+
+.product-points-right-title{
+    display: flex;
+    margin-left: 15%;
+}
+
+.product-points-right-title__icon{
+    width: 2vw;
+    height: auto;
+    margin-right: 2%;
+}
+
+.product-points-right-title__text{
+    color: #0E7892;
+    font-size: 2rem;
+    font-family: 'RocknRoll One';
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 1%;
+}
+
+.product-points-right-text__image{
+    position: relative;
+    width: 25vw;
+    height: auto;
+    z-index: 1;
+}
+
+.product-points-right-text__list{
+    position: absolute;
+    margin-left: 6%;
+    z-index: 2;
+    font-family: 'A P-OTF Shuei KakuGo Gin Std';
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin-top: -4.5%;
+}
+
+.product-points-center-mini__text{
+    position: absolute;
+    bottom: 12%;
+    left: 18%;
+    color: #0E7892;
+    font-size: 1.2rem;
+}
+
+
+@media screen and (max-width: 749px) {
+
+    .product-points__wrapper{
+        background-image: url(https://cdn.shopify.com/s/files/1/0584/0286/5288/files/product-points-background-sp.png?v=1658168537);
+        /* padding-top: 267%; */
+        height: 1000px;
+    }
+
+    .product-points__inner{
+        top: 15%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-points-left{
+        width: 90vw;
+    }
+
+    .product-points-left-title{
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .product-points-left-title__icon{
+        width: 5vw;
+    }
+
+    .product-points-left-text__image{
+        width: 90vw;
+    }
+
+    .product-points-left-text__list{
+        margin-left: 17%;
+        margin-top: -12%;
+    }
+
+    .product-points-center__image{
+        width: 60vw;
+        height: 60vw;
+        margin: 2%;
+    }
+
+    .product-points-right{
+        width: 90vw;
+        margin-top: 7%;
+    }
+
+    .product-points-right-title{
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .product-points-right-title__icon{
+        width: 7vw;
+    }
+
+    .product-points-right-text__image{
+        width: 90vw;
+    }
+
+    .product-points-right-text__list{
+        margin-left: 15%;
+        margin-top: -12%;
+    }
+
+    .product-points-center-mini__text{
+        bottom: 6%;
+        left: 12%;
+        font-size: 1.2rem;
+    }
+}
+
+/* ***Product Schedule***** */
+
+.product-schedule__wrapper{
+    background-color: #F5F7F8;
+}
+
+.product-schedule__inner{
+    width: 85%;
+    margin-left: 15%;
+    padding-top: 5%;
+    padding-bottom: 10%;
+    position: relative;
+}
+
+.product-schedule__heading{
+    font-weight: 600;
+    margin-bottom: 5%;
+    font-size: 2.4rem;
+}
+
+.product-schedule__block {
+    display: flex;
+    margin-top: -1%;
+}
+
+.product-schedule__time{
+    margin-right: 2%;
+    font-weight: 600;
+    width: 3vw;
+}
+
+.product-schedule-circle{
+    width: 1rem;
+    height: 1rem;
+    margin-right: -5px;
+    z-index: 2;
+    margin-top: 1%;
+}
+
+.product-schedule-map__border{
+    border-left: 1px solid #87BAC6;
+    z-index: 1;
+    margin-top: 1%;
+    padding-bottom: 5%;
+}
+
+.product-schedule__content{
+    margin-left: 2%;
+    width: 50vw;
+}
+
+.product-schedule__title{
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-top: 0;
+}
+
+.product-schedule-content__wrapper{
+    display: flex;
+}
+
+.product-schedule-content__image{
+    width: 20vw;
+    height: auto;
+}
+
+.product-schedule-content__text{
+    margin-left: 3%;
+}
+
+.product-schedule-mini__inner{
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+}
+
+.product-schedule-mini__icon{
+    width: 15vw;
+    height: auto;
+}
+
+.product-schedule-mini__text{
+    color: #0E7892;
+    font-size: 1.2rem;
+    line-height: 0.5rem;
+}
+
+@media screen and (max-width: 749px) {
+
+    .product-schedule__heading{
+        font-size: 2rem;
+        padding-bottom: 7%;
+    }
+
+    .product-schedule__inner{
+        width: 100%;
+        margin-left: 3%;
+        padding-bottom: 30%;
+    }
+
+    .product-schedule__time {
+        width: 10vw;
+    }
+
+    .product-schedule__content {
+        margin-left: 7%;
+        width: 70vw;
+    }
+
+    .product-schedule-content__wrapper{
+        display: block;
+    }
+
+    .product-schedule-content__image{
+        width: 70vw;
+    }
+
+    .product-schedule-mini__icon{
+        width: 55vw;
+    }
+}
+
+/* **Product Attention**** */
+
+.product-attention__wrapper{
+    width: 80%;
+    margin-left:10%;
+    margin-right:10%;
+    position: relative;
+    padding-top: 3%;
+}
+
+.product-attention__inner{
+    position: relative;
+    padding-top: 5%;
+}
+
+.product-attention__list{
+    width: 90%;
+}
+
+.product-attention__text{
+    color: #0E7892;
+    font-size: 1.2rem;
+    line-height: 0.5rem;
+}
+
+.product-attention__icon{
+    width: 15vw;
+    height: auto;
+}
+
+@media screen and (max-width: 749px) {
+
+    .product-attention__wrapper{
+        width: 100%;
+        margin-left:5%;
+        margin-right:5%;
+    }
+
+    .product-attention__icon{
+        width: 55vw;
+    }
+}
+
+/* ***Product Other Recommendations****** */
+
+.product-other-reco__wrapper{
+    background-color: #F5F7F8;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    position: relative;
+}
+
+.product-other-reco__title{
+    text-align: center;
+}
+
+.product-other-reco__inner{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.product-other-reco__image{
+    width: 25vw;
+    height: auto;
+    border-radius: 2rem;
+    padding: 2%;
+}
+
+.product-other-reco__text{
+    color: #0E7892;
+    font-size: 1.2rem;
+    text-align: right;
+    margin-right: 15%;
+}
+
+.product-other-reco__icon{
+    width: 15vw;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    right: 15%;
+}
+
+@media screen and (max-width: 749px) {
+
+    .product-other-reco__wrapper{
+        padding-bottom: 15%;
+    }
+
+    .product-other-reco__inner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-other-reco__image{
+        width: 80vw;
+        height: auto;
+    }
+
+    .product-other-reco__text{
+        margin-right: 5%;
+    }
+
+    .product-other-reco__icon{
+        width: 55vw;
+        bottom: 0;
+        right: 5%;
+    }
+}
+
+
 /* ***セクション******* */
 
 /* *トップページ　ブログセクション */

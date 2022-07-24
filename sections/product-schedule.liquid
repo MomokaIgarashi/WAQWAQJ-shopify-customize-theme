@@ -1,0 +1,68 @@
+<div class="product-schedule__wrapper">
+    <div class="product-schedule__inner">
+        <h3 class="product-schedule__heading">スケジュール</h3>
+        <div class="product-schedule__block">
+            <div class="product-schedule__time">{{ product.metafields.custom.schedule-map1-time.value }}</div>
+            <img class="product-schedule-circle" src="{{ 'product-schedule-circle.png' | asset_url }}" alt="circle">
+            <div class="product-schedule-map__border">
+                <div class="product-schedule__content">
+                    <p class="product-schedule__title">{{ product.metafields.custom.schedule-map1-title.value }}</p>
+                    <p>{{ product.metafields.custom.schedule-map1-text.value }}</p>
+                    <p>集合場所</p>
+                    {{ product.metafields.custom.schedule-map1-map.value }}
+                    <p>{{ product.metafields.custom.schedule-map1-address.value }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="product-schedule__block">
+            <div class="product-schedule__time">{{ product.metafields.custom.schedule-content1-time.value }}</div>
+            <img class="product-schedule-circle" src="{{ 'product-schedule-circle.png' | asset_url }}" alt="circle">
+            <div class="product-schedule-map__border">
+                <div class="product-schedule__content">
+                    <p class="product-schedule__title">{{ product.metafields.custom.schedule-content1-title.value }}</p>
+                    <div class="product-schedule-content__wrapper">
+                        <img class="product-schedule-content__image" src="{{ product.metafields.custom.schedule-content1-image.value | img_url:"original"}}" alt="circle">
+                        <p class="product-schedule-content__text">{{ product.metafields.custom.schedule-content1-text.value }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-schedule__block">
+            <div class="product-schedule__time">{{ product.metafields.custom.schedule-content2-time.value }}</div>
+            <img class="product-schedule-circle" src="{{ 'product-schedule-circle.png' | asset_url }}" alt="circle">
+            <div class="product-schedule-map__border">
+                <div class="product-schedule__content">
+                    <p class="product-schedule__title">{{ product.metafields.custom.schedule-content2-title.value }}</p>
+                    <div class="product-schedule-content__wrapper">
+                        <img class="product-schedule-content__image" src="{{ product.metafields.custom.schedule-content2-image.value | img_url:"original"}}" alt="circle">
+                        <p class="product-schedule-content__text">{{ product.metafields.custom.schedule-content2-text.value }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-schedule__block">
+            <div class="product-schedule__time">{{ product.metafields.custom.schedule-map2-time.value }}</div>
+            <img class="product-schedule-circle" src="{{ 'product-schedule-circle.png' | asset_url }}" alt="circle">
+            <div class="product-schedule-map__border">
+                <div class="product-schedule__content">
+                    <p class="product-schedule__title">{{ product.metafields.custom.schedule-map2-title.value }}</p>
+                    <p>{{ product.metafields.custom.schedule-map2-text.value }}</p>
+                    <p>解散場所</p>
+                    {{ product.metafields.custom.schedule-map2-map.value }}
+                    <p>{{ product.metafields.custom.schedule-map2-address.value }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="product-schedule__block">
+            <div class="product-schedule__time">20:00</div>
+            <img class="product-schedule-circle" src="{{ 'product-schedule-circle.png' | asset_url }}" alt="circle">
+            <div class="product-schedule__content">
+                <p class="product-schedule__title">終了</p>
+            </div>
+        </div>
+        <div class="product-schedule-mini__inner">
+            <p class="product-schedule-mini__text">{{ product.metafields.custom.schedule-mini-text.value }}</p>
+            <img class="product-schedule-mini__icon" src="https://cdn.shopify.com/s/files/1/0584/0286/5288/files/waqwaq-icon-text1.png?v=1658252285" alt="">
+        </div>
+    </div>
+</div>
