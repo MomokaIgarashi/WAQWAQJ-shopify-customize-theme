@@ -1,45 +1,67 @@
 <div class="product-schedule__wrapper">
     <div class="product-schedule__inner">
-        <h3>スケジュール</h3>
-        <div class="product-schedule-map__block">
-            <div class="product-schedule-map__time">8:00</div>
+        <h3 class="product-schedule__heading">スケジュール</h3>
+        <div class="product-schedule__block">
+            <div class="product-schedule__time">{{ product.metafields.custom.schedule-map1-time.value }}</div>
             <img class="product-schedule-circle" src="{{ 'product-schedule-circle.png' | asset_url }}" alt="circle">
             <div class="product-schedule-map__border">
-                <div class="product-schedule-map__content">
-                    <p class="product-schedule-map__title">伊勢より出発</p>
-                    <p>伊勢の主要スポットを効率よく周る周遊バスツアー。自分で回ると意外と移動が大変な神宮めぐり。</p>
+                <div class="product-schedule__content">
+                    <p class="product-schedule__title">{{ product.metafields.custom.schedule-map1-title.value }}</p>
+                    <p>{{ product.metafields.custom.schedule-map1-text.value }}</p>
                     <p>集合場所</p>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3289.7217658089985!2d136.72304921483976!3d34.45921010362185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600450e9616e118f%3A0x1ca6c3a9b97640ae!2z5pel5pys44CB44CSNTE2LTAwMjMg5LiJ6YeN55yM5LyK5Yui5biC5a6H5rK76aSo55S677yR!5e0!3m2!1sja!2sde!4v1658170448273!5m2!1sja!2sde" width="270" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    <p>
-                        〒516-0023 三重県伊勢市宇治館町1<br>
-                        ●●●前にて集合</p>
+                    {{ product.metafields.custom.schedule-map1-map.value }}
+                    <p>{{ product.metafields.custom.schedule-map1-address.value }}</p>
                 </div>
             </div>
         </div>
-        <div class="product-schedule-map__block">
-            <div class="product-schedule-map__time">8:00</div>
+        <div class="product-schedule__block">
+            <div class="product-schedule__time">{{ product.metafields.custom.schedule-content1-time.value }}</div>
             <img class="product-schedule-circle" src="{{ 'product-schedule-circle.png' | asset_url }}" alt="circle">
             <div class="product-schedule-map__border">
-                <div class="product-schedule-map__content">
-                    <p class="product-schedule-map__title">伊勢より出発</p>
-                    <p>伊勢の主要スポットを効率よく周る周遊バスツアー。自分で回ると意外と移動が大変な神宮めぐり。</p>
-                    <p>集合場所</p>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3289.7217658089985!2d136.72304921483976!3d34.45921010362185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600450e9616e118f%3A0x1ca6c3a9b97640ae!2z5pel5pys44CB44CSNTE2LTAwMjMg5LiJ6YeN55yM5LyK5Yui5biC5a6H5rK76aSo55S677yR!5e0!3m2!1sja!2sde!4v1658170448273!5m2!1sja!2sde" width="270" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    <p>
-                        〒516-0023 三重県伊勢市宇治館町1<br>
-                        ●●●前にて集合</p>
+                <div class="product-schedule__content">
+                    <p class="product-schedule__title">{{ product.metafields.custom.schedule-content1-title.value }}</p>
+                    <div class="product-schedule-content__wrapper">
+                        <img class="product-schedule-content__image" src="{{ product.metafields.custom.schedule-content1-image.value | img_url:"original"}}" alt="circle">
+                        <p class="product-schedule-content__text">{{ product.metafields.custom.schedule-content1-text.value }}</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="product-schedule-map__block">
-            <div class="product-schedule-map__time">20:00</div>
+        <div class="product-schedule__block">
+            <div class="product-schedule__time">{{ product.metafields.custom.schedule-content2-time.value }}</div>
             <img class="product-schedule-circle" src="{{ 'product-schedule-circle.png' | asset_url }}" alt="circle">
-            <div class="product-schedule-map__content">
-                <p class="product-schedule-map__title">終了</p>
+            <div class="product-schedule-map__border">
+                <div class="product-schedule__content">
+                    <p class="product-schedule__title">{{ product.metafields.custom.schedule-content2-title.value }}</p>
+                    <div class="product-schedule-content__wrapper">
+                        <img class="product-schedule-content__image" src="{{ product.metafields.custom.schedule-content2-image.value | img_url:"original"}}" alt="circle">
+                        <p class="product-schedule-content__text">{{ product.metafields.custom.schedule-content2-text.value }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-schedule__block">
+            <div class="product-schedule__time">{{ product.metafields.custom.schedule-map2-time.value }}</div>
+            <img class="product-schedule-circle" src="{{ 'product-schedule-circle.png' | asset_url }}" alt="circle">
+            <div class="product-schedule-map__border">
+                <div class="product-schedule__content">
+                    <p class="product-schedule__title">{{ product.metafields.custom.schedule-map2-title.value }}</p>
+                    <p>{{ product.metafields.custom.schedule-map2-text.value }}</p>
+                    <p>解散場所</p>
+                    {{ product.metafields.custom.schedule-map2-map.value }}
+                    <p>{{ product.metafields.custom.schedule-map2-address.value }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="product-schedule__block">
+            <div class="product-schedule__time">20:00</div>
+            <img class="product-schedule-circle" src="{{ 'product-schedule-circle.png' | asset_url }}" alt="circle">
+            <div class="product-schedule__content">
+                <p class="product-schedule__title">終了</p>
             </div>
         </div>
         <div class="product-schedule-mini__inner">
-            <p class="product-schedule-mini__text">{{ product.metafields.custom.product-attention-text.value }}</p>
+            <p class="product-schedule-mini__text">{{ product.metafields.custom.schedule-mini-text.value }}</p>
             <img class="product-schedule-mini__icon" src="https://cdn.shopify.com/s/files/1/0584/0286/5288/files/waqwaq-icon-text1.png?v=1658252285" alt="">
         </div>
     </div>
