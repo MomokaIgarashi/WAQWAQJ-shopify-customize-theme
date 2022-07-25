@@ -38,6 +38,98 @@ header{
     }
 }
 
+/* <<<<<ブログ一覧ページ>>>>>>>>>> */
+
+.blog-hero__block{
+    position: relative;
+}
+
+.blog-hero__image{
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+.blog-hero__title{
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    color: #EB6C3F;
+    font-size: ;
+    font-weight: bold;
+    text-align: center;
+    z-index: 2;
+}
+
+.blog-index{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    margin: 5%;
+}
+
+.blog-index__wrapper{
+    /* display: flex;
+    flex-wrap: wrap; */
+    /* margin: 5%; */
+}
+
+.blog-each-article__wrapper{
+    width: 35vw;
+}
+
+.blog-content__wrapper{
+    width: 100%;
+    margin: 5%;
+}
+
+.blog-header-image__wrapper{
+    /* width: 35vw; */
+}
+
+.blog-header-image{
+    width: 30vw;
+    height: auto;
+    /* margin: 5%; */
+}
+
+.blog__content{
+    width: 30vw;
+    /* margin: 5%; */
+}
+
+@media screen and (max-width: 749px) {
+
+    .blog-hero__title{
+        font-size: 2rem;
+    }
+
+    .blog-index{
+        display: block;
+        width: 90vw;
+        margin: 5vw;
+    }
+
+    .blog-each-article__wrapper{
+        width: 100%;
+        padding: 0;
+    }
+
+    .blog-content__wrapper{
+        width: 90vw;
+        margin: 5%;
+    }
+    
+    .blog-header-image{
+        width: 80vw;
+        height: auto;
+    }
+
+    .blog__content{
+        width: 80vw;
+    }
+}
 
 /* <<<<<<<商品個別ページ>>>>>>>> */
 

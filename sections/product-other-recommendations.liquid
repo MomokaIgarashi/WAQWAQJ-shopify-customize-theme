@@ -1,11 +1,19 @@
 <div class="product-other-reco__wrapper">
     <p class="product-other-reco__title">その他のツアー</p>
     <div class="product-other-reco__inner">
-        <a href="{{ product.metafields.custom.other-product1.value }}">
-            <img class="product-other-reco__image" src="{{ product.metafields.custom.other-product1.value | img_url:"master"}}" alt="">
+        {% assign product_rec_1 = all_products[product.metafields.custom.other-product1] %}
+        {% assign product_rec_1_url = product_rec_1.url %}
+        {% assign product_rec_1_image = product_rec_1.featured_image %}
+
+        {% assign product_rec_2 = all_products[product.metafields.custom.other-product2] %}
+        {% assign product_rec_2_url = product_rec_2.url %}
+        {% assign product_rec_2_image = product_rec_2.featured_image %}
+
+        <a href="{{ product_rec_1_url }}">
+            <img class="product-other-reco__image" src="{{ product_rec_1_image | img_url:"original"}}" alt="">
         </a>
-        <a href="{{ product.metafields.custom.other-product2.value }}">
-            <img class="product-other-reco__image" src="{{ product.metafields.custom.other-product2.value | img_url:"master"}}" alt="">
+        <a href="{{ product_rec_2_url }}">
+            <img class="product-other-reco__image" src="{{ product_rec_2_image | img_url:"original"}}" alt="">
         </a>
     </div>
     <p class="product-other-reco__text">{{ product.metafields.custom.other-recommendations-text.value }}</p>
